@@ -1,0 +1,82 @@
+:root {
+    --primary-color: rgb(109, 47, 253);
+    --secondary-color: #2f54f8;
+    --tertiary-color: #001763;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--tertiary-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.head-links {
+    display: flex;
+    font-size: 22px;
+}
+
+.head-links ul li {
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    float: left;
+    padding: 10px;
+    margin: 0 30px 0 0;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+header a {
+    text-decoration: none;
+
+}
+
+.hero {
+    display: flex;
+    background-color:var(--primary-color);
+    justify-content: space-evenly;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    width: 80%;
+}
+
+.profile-pic img {
+    max-height: 200px;
+    max-width: 100px;
+    position: center;
+}
+
+.cool-thing img {
+    max-height: 200px;
+    max-width: 100px;
+    justify-content: space-evenly;
+}
+
+.bio {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bio div ul {
+    text-align: center;
+    list-style: none;
+}
+
+.bio div ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.bio a {
+    text-decoration: none;
+}
