@@ -19,10 +19,6 @@ header {
     z-index: 999;
 }
 
-a {
-    text-decoration: none;
-}
-
 .head-links {
     display: flex;
     font-size: 22px;
@@ -41,6 +37,11 @@ a {
 header h1 {
     font-size: 35px;
     margin-left: 30px;
+}
+
+header a {
+    text-decoration: none;
+
 }
 
 h2 {
@@ -92,50 +93,15 @@ h2 {
 }
 
 .bio a {
+    text-decoration: none;
     justify-content: center;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-}
-
-h2 {
-    width: 100%;
-    margin: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.showcase {
-    display: flex;
-    flex-wrap: wrap;
+.run-buddy {
     width: 250px;
     height: 250px;
     border: 2px solid black;
+    margin: 20px;
+    background-image: url(./Run-buddy.png);
     background-size: cover;
-    position: relative;
-    margin: 0 auto;
-    justify-content: space-around;
-}
-
-.run-buddy {
-    background-image: url(./images/Run-Buddy.png);
-}
-
-.projects span {
-
-        position:absolute; 
-        width:250px;
-        height:250px;
-        top:0;
-        left: 0;
-      
-        z-index: 1;
-      
-        /* fixes overlap error in IE7/8, 
-           make sure you have an empty gif */
-        background-image: url('./empty.gif');
- 
 }
