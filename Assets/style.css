@@ -28,7 +28,8 @@ a {
 h1 {
     color: var(--tertiary-color);
     font-size: 35px;
-    margin-left: 30px;
+    margin-left: 53px;
+    text-align: left;
 }
 
 .head-links {
@@ -62,12 +63,17 @@ h2 {
     justify-content: center;
     position: center;
     margin-left: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--fourth-color);
 }
 
+.header-styles {
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 20px;
+    margin: 0 auto 35px auto;
+    font-size: 48px;
+}
 
 .bio {
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -76,7 +82,7 @@ h2 {
 .bio p {
     line-height: 2;
     flex: 1;
-    color: var(--tertiary-color);
+    color: var(--fourth-color);
     font-weight: bold;
     font-size: 20px;
 }
@@ -109,16 +115,6 @@ h2 {
     flex: 1;
     justify-content: space-around;
     background-color: var(--tertiary-color);
-}
-
-.project-header {
-    width: 100%;
-    text-align: center;
-    text-align: center;
-    position: relative;
-    background-color: black;
-    margin: 0px;
-    heoi
 }
 
 .project-header h2 {
