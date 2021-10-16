@@ -28,8 +28,7 @@ a {
 h1 {
     color: var(--tertiary-color);
     font-size: 35px;
-    margin-left: 53px;
-    text-align: left;
+    margin-left: 37px;
 }
 
 .head-links {
@@ -55,22 +54,43 @@ h2 {
     color: var(--tertiary-color);
 }
 
-.profile-pic img {
-    max-height: 500px;
-    max-width: 300px;
-    position: relative;
+h3{
+    width: 40%;
+}
+
+.profile-pic {
+    width: 100x;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+.profile-pic img {
+    max-width: 300px;
+    flex-wrap: wrap;
+    justify-content: left;
     position: center;
-    margin-left: 10px;
     border: 2px solid var(--fourth-color);
 }
 
 .header-styles {
-    border-bottom: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
     padding-bottom: 20px;
-    margin: 0 auto 35px auto;
-    font-size: 48px;
+    margin: 40px auto 35px auto;
+    font-size: 40px;
+}
+
+.left-bar {
+    display: flex;
+    flex: 1;
+    width: 30%;
+    color: var(--tertiary-color);
+    position: sticky;
+    flex-direction: row;
+    width: 30%;
+    height: 100vw;
+}
+
+.right-bar {
+    margin-left: 20px;
 }
 
 .bio {
@@ -80,24 +100,29 @@ h2 {
 }
 
 .bio p {
+    flex-wrap: wrap;
     line-height: 2;
     flex: 1;
     color: var(--fourth-color);
     font-weight: bold;
     font-size: 20px;
+    margin-top: 50px;
+    width: 90%;
+    height: 400px;
+}
+
+.bio div {
+    width: 60%;
+    justify-content: space-around;
 }
 
 .bio div ul {
+    flex-wrap: wrap;
     list-style: none;
-    flex-direction: row;
     width: 200px;
     padding: 20px 0 20px 0;
     text-align: center;
     color: var(--tertiary-color);
-}
-
-.bio h3 {
-    padding: 5px 5px 5px 5px;
 }
 
 .bio h4 {
