@@ -1,7 +1,8 @@
 :root {
-    --primary-color: rgb(109, 47, 253);
-    --secondary-color: #2f54f8;
-    --tertiary-color: #001763;
+    --primary-color: #0b3c6d;
+    --secondary-color:#32bcc1;
+    --tertiary-color: #d9b310;
+    --fourth-color: #1d2731;
 }
 
 body {
@@ -12,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -21,6 +22,13 @@ header {
 
 a {
     text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+h1 {
+    color: var(--tertiary-color);
+    font-size: 35px;
+    margin-left: 30px;
 }
 
 .head-links {
@@ -38,16 +46,12 @@ a {
     margin: 0 30px 0 0;
 }
 
-header h1 {
-    font-size: 35px;
-    margin-left: 30px;
-}
-
 h2 {
     text-align: center;
     position: relative;
     width: 80%;
     margin-left: 25px;
+    color: var(--tertiary-color);
 }
 
 .profile-pic img {
@@ -70,8 +74,11 @@ h2 {
 }
 
 .bio p {
-    line-height: 1.5;
+    line-height: 2;
     flex: 1;
+    color: var(--tertiary-color);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .bio div ul {
@@ -80,6 +87,7 @@ h2 {
     width: 200px;
     padding: 20px 0 20px 0;
     text-align: center;
+    color: var(--tertiary-color);
 }
 
 .bio h3 {
@@ -99,13 +107,22 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex: 1;
+    justify-content: space-around;
+    background-color: var(--tertiary-color);
 }
 
-h2 {
+.project-header {
     width: 100%;
-    margin: 10px;
-    padding-bottom: 20px;
     text-align: center;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    margin: 0px;
+    heoi
+}
+
+.project-header h2 {
+    color: var(--primary-color);
 }
 
 .showcase {
@@ -118,6 +135,7 @@ h2 {
     position: relative;
     margin: 0 auto;
     justify-content: space-around;
+    text-align: center;
 }
 
 .run-buddy {
