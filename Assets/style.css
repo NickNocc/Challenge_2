@@ -54,9 +54,14 @@ h2 {
     color: var(--tertiary-color);
 }
 
-h3{
+h3 {
+    display: flex;
+    flex-wrap: wrap;
     width: 40%;
+    max-height: 500px;
+    justify-content: right;
 }
+
 
 .profile-pic {
     width: 100x;
@@ -72,26 +77,23 @@ h3{
 }
 
 .header-styles {
-    border-right: 3px solid var(--secondary-color);
-    padding-bottom: 20px;
+    padding-bottom: 290px;
     margin: 40px auto 35px auto;
-    font-size: 40px;
+    font-size: 30px;
+    width: 200px;
 }
 
 .left-bar {
     display: flex;
     flex: 1;
-    width: 30%;
+    width: 700px;
     color: var(--tertiary-color);
     position: sticky;
     flex-direction: row;
-    width: 30%;
     height: 100vw;
+    border-right: 3px solid var(--secondary-color);
 }
 
-.right-bar {
-    margin-left: 20px;
-}
 
 .bio {
     display: flex;
@@ -99,39 +101,91 @@ h3{
     flex-wrap: wrap;
 }
 
-.bio p {
+.right-bar {
+    display: flex;
     flex-wrap: wrap;
+    width: 760px;
+    max-height: 350px;
+    padding-left: 30px;
+}
+
+.right-bar p {
     line-height: 2;
     flex: 1;
     color: var(--fourth-color);
     font-weight: bold;
     font-size: 20px;
     margin-top: 50px;
-    width: 90%;
-    height: 400px;
-}
+    margin-bottom: 0px;
 
-.bio div {
-    width: 60%;
-    justify-content: space-around;
 }
 
 .bio div ul {
-    flex-wrap: wrap;
     list-style: none;
-    width: 200px;
-    padding: 20px 0 20px 0;
     text-align: center;
     color: var(--tertiary-color);
 }
 
+.bio div ul li {
+    width: 30%;
+    margin: 0 0;
+}
+
 .bio h4 {
-    font-size: 15px;
+    font-size: 25px;
     justify-content: center;
+    margin: 10px auto;
 }
 
 .bio a {
     justify-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 700px;
+    padding-top: 40px;
+}
+
+.contact-info div {
+    margin: 0 auto;
+}
+
+.contact-info ul {
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.left-headers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 13px;
+    width: 250px;
+    text-align: center;
+}
+
+.contacts {
+    width: 150px;
+}
+
+.contacts a {
+    width: 90px;
+}
+
+.contacts p {
+    width: 200px;
+    margin: 0 -25px;
+    color: var(--tertiary-color);
+    font-weight: normal;
 }
 
 .projects {
