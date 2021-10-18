@@ -87,7 +87,7 @@ h3 {
     display: flex;
     flex: 1;
     width: 30%;
-    max-width: 500px;
+    max-width: 600px;
     color: var(--tertiary-color);
     position: sticky;
     flex-direction: row;
@@ -108,7 +108,7 @@ h3 {
 .right-bar {
     display: flex;
     flex-wrap: wrap;
-    width: 72%;
+    width: 65%;
     padding-left: 30px;
     flex-direction: column;
 }
@@ -163,9 +163,10 @@ h3 {
 
 .contact-info ul {
     display: flex;
-    width: 700px;
+    width: 100%;
     flex-direction: row;
     font-size: 20px;
+    padding-top: auto;
 }
 
 .opener {
@@ -203,6 +204,10 @@ h3 {
     flex: 1;
     justify-content: space-around;
     background-color: var(--tertiary-color);
+}
+
+.projects a {
+    padding-bottom: 20px;
 }
 
 .project-header h2 {
