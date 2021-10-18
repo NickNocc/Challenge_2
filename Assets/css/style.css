@@ -31,10 +31,14 @@ h1 {
     margin-left: 37px;
 }
 
+footer {
+    z-index: 998;
+}
+
 .head-links {
     display: flex;
-    font-size: 22px;
     font-weight: bold;
+    font-size: 1.55vw;
 }
 
 .head-links ul li {
@@ -44,6 +48,13 @@ h1 {
     float: left;
     padding: 10px;
     margin: 0 30px 0 0;
+}
+
+.head-links a:hover {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    text-shadow: none;
 }
 
 h2 {
@@ -87,7 +98,7 @@ h3 {
     display: flex;
     flex: 1;
     width: 30%;
-    max-width: 600px;
+    max-width: 550px;
     color: var(--tertiary-color);
     position: sticky;
     flex-direction: row;
@@ -103,12 +114,13 @@ h3 {
     width: 100%;
     height: 100%;
     justify-content: stretch;
+    position: absolute;
 }
 
 .right-bar {
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
+    width: 60%;
     padding-left: 30px;
     flex-direction: column;
 }
@@ -170,7 +182,7 @@ h3 {
 }
 
 .opener {
-    width: auto;
+    width: 100%;
     padding-bottom: 75px;
 }
 
@@ -208,6 +220,7 @@ h3 {
 
 .projects a {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .project-header h2 {
@@ -221,9 +234,9 @@ h3 {
 .showcase {
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
-    height: 250px;
-    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--primary-color);
     background-size: cover;
     position: relative;
     margin: 0 auto;
@@ -231,8 +244,32 @@ h3 {
     text-align: center;
 }
 
+.showcase h3 {
+    display: inline;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    max-height: 30px;
+    text-align: center;
+    width: 125px;
+    font-size: 1.2vw;
+}
+
+.showcase:hover {
+    transform: scale(1.115);
+    box-shadow: 0 10px 10px var(--fourth-color);
+}
+
+
 .run-buddy {
     background-image: url(../images/Run-Buddy.png);
+}
+
+.challenge-1 {
+    background-image: url(../images/Horiseon.png);
+}
+
+.challenge-2 {
+    background-image: url(../images/Challenge-2.png);
 }
 
 .projects span {
@@ -249,4 +286,8 @@ h3 {
            make sure you have an empty gif */
         background-image: url('./empty.gif');
  
+}
+
+.last-header {
+    row-gap: 80%;
 }
