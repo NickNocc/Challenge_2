@@ -108,7 +108,7 @@ h3 {
 .right-bar {
     display: flex;
     flex-wrap: wrap;
-    width: 65%;
+    width: 72%;
     padding-left: 30px;
     flex-direction: column;
 }
