@@ -1,7 +1,8 @@
 :root {
-    --primary-color: rgb(109, 47, 253);
-    --secondary-color: #2f54f8;
-    --tertiary-color: #001763;
+    --primary-color: #0b3c6d;
+    --secondary-color:#32bcc1;
+    --tertiary-color: #d9b310;
+    --fourth-color: #1d2731;
 }
 
 body {
@@ -12,11 +13,22 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+h1 {
+    color: var(--tertiary-color);
+    font-size: 35px;
+    margin-left: 37px;
 }
 
 .head-links {
@@ -34,82 +46,189 @@ header {
     margin: 0 30px 0 0;
 }
 
-header h1 {
-    font-size: 35px;
-    margin-left: 30px;
-}
-
-header a {
-    text-decoration: none;
-
-}
-
 h2 {
     text-align: center;
     position: relative;
     width: 80%;
     margin-left: 25px;
+    color: var(--tertiary-color);
+}
+
+h3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    max-height: 500px;
+    justify-content: right;
+}
+
+
+.profile-pic {
+    width: 100x;
+    flex-wrap: wrap;
 }
 
 .profile-pic img {
-    max-height: 500px;
     max-width: 300px;
-    position: relative;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     position: center;
-    margin-left: 10px;
-    border: 2px solid black;
+    border: 2px solid var(--fourth-color);
+}
+
+.header-styles {
+    padding-bottom: 290px;
+    margin: 40px auto 35px auto;
+    font-size: 30px;
+    width: 200px;
+}
+
+.left-bar {
+    display: flex;
+    flex: 1;
+    width: 700px;
+    color: var(--tertiary-color);
+    position: sticky;
+    flex-direction: row;
+    height: 100vw;
+    border-right: 3px solid var(--secondary-color);
 }
 
 
 .bio {
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.bio p {
-    line-height: 1.5;
+.right-bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 760px;
+    max-height: 350px;
+    padding-left: 30px;
+}
+
+.right-bar p {
+    line-height: 2;
     flex: 1;
+    color: var(--fourth-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
 }
 
 .bio div ul {
     list-style: none;
-    flex-direction: row;
-    width: 200px;
-    padding: 20px 0 20px 0;
     text-align: center;
+    color: var(--tertiary-color);
 }
 
-.bio h3 {
-    padding: 5px 5px 5px 5px;
+.bio div ul li {
+    width: 30%;
+    margin: 0 0;
 }
 
 .bio h4 {
-    font-size: 15px;
+    font-size: 25px;
     justify-content: center;
+    margin: 10px auto;
 }
 
 .bio a {
-    text-decoration: none;
     justify-content: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-.run-buddy {
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 700px;
+    padding-top: 40px;
+}
+
+.contact-info div {
+    margin: 0 auto;
+}
+
+.contact-info ul {
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.left-headers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 13px;
     width: 250px;
-    height: 250px;
-    border: 2px solid black;
-    margin: 20px;
-    background-image: url(./Run-buddy.png);
-    background-size: cover;
+    text-align: center;
+}
+
+.contacts {
+    width: 150px;
+}
+
+.contacts a {
+    width: 90px;
+}
+
+.contacts p {
+    width: 200px;
+    margin: 0 -25px;
+    color: var(--tertiary-color);
+    font-weight: normal;
 }
 
 .projects {
-    max-width: 760px;
-    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+    background-color: var(--tertiary-color);
+}
 
+.project-header h2 {
+    color: var(--primary-color);
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.run-buddy {
+    background-image: url(./images/Run-Buddy.png);
+}
+
+.projects span {
+
+        position:absolute; 
+        width:250px;
+        height:250px;
+        top:0;
+        left: 0;
+      
+        z-index: 1;
+      
+        /* fixes overlap error in IE7/8, 
+           make sure you have an empty gif */
+        background-image: url('./empty.gif');
+ 
 }
